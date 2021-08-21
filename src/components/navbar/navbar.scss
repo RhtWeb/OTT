@@ -1,0 +1,26 @@
+
+.navbar {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      span {
+        margin: 0 1rem;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin: 0 1rem;
+      }
+    }
+  }
+}
