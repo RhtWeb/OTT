@@ -21,6 +21,27 @@
       .icon {
         margin: 0 1rem;
       }
+
+      .dropdown {
+        cursor: pointer;
+
+        .option {
+          display: none;
+        }
+
+        &:hover {
+          .option {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            background-color: var(--main-color);
+
+            span {
+              padding: 0.5rem;
+            }
+          }
+        }
+      }
     }
   }
 }
