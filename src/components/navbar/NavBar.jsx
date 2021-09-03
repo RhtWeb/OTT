@@ -1,9 +1,23 @@
 import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
+import { useRef } from "react";
 import "./navbar.scss";
 
 const NavBar = () => {
+
+  const navBarRef = useRef();
+
+  window.onscroll = () => {
+    if(window.pageYOffset > 40) {
+      navBarRef.current.className = "navbar navbar-dark"
+    } else {
+      navBarRef.current.className = "navbar"
+    }
+
+    return () => (window.onscroll = null);
+  }
+
   return (
-    <div className="navbar">
+    <div ref={navBarRef} className="navbar">
       <div className="container">
         <div className="left">
           <span>RHT OTT</span> 

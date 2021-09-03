@@ -5,6 +5,11 @@
   z-index: 2;
   width: 100%;
   background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+  transition: all 1s ease;
+
+  &-dark {
+    background-color: black;
+  }
 
   .container {
     width: 90%;
