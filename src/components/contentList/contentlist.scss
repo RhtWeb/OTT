@@ -1,0 +1,39 @@
+
+.content-container {
+  position: relative;
+
+  .big-arrow {
+    position: absolute;
+    // border: 1px solid white;
+    width: 2.5rem;
+    height: 12rem;
+    margin: 1rem 0;
+    z-index: 2;
+
+    &:hover {
+      background-color: grey;
+      color: black;
+      cursor: pointer;
+    }
+
+    &-right {
+      top: 14%;
+      right: 0%;
+    }
+  }
+
+  .content-list {
+    display: flex;
+    margin: auto 2rem;
+    // transform: translateX(-200px);
+    transition: all 1s ease;
+  
+    .content-item {
+      margin: 1rem;
+      min-width: 15rem;
+      height: 12rem;
+      border: 1px white solid;
+    }
+  }
+
+}

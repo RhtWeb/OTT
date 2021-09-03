@@ -6,7 +6,7 @@ const NavBar = () => {
     <div className="navbar">
       <div className="container">
         <div className="left">
-          <span>RHT OTT</span>
+          <span>RHT OTT</span> 
           <span>Homepage</span>
           <span>Series</span>
           <span>Movies</span>
