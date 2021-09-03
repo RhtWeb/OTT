@@ -8,9 +8,9 @@ const NavBar = () => {
 
   window.onscroll = () => {
     if(window.pageYOffset > 40) {
-      navBarRef.current.className = "navbar navbar-dark"
+      navBarRef.current.className = "navbar navbar-dark";
     } else {
-      navBarRef.current.className = "navbar"
+      navBarRef.current.className = "navbar";
     }
 
     return () => (window.onscroll = null);
