@@ -10,6 +10,7 @@ const Home = () => {
       <NavBar />
       <CoverPage type="movie" />
       <ContentList />
+      <ContentList />
     </div>
   )
 }

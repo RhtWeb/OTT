@@ -26,24 +26,22 @@ const ContentList = () => {
   }
 
   return (
-    <div>
-      <div className="content-container">
-        <h1>Continue Watching</h1>
-        <ArrowLeft onClick={() => handleShift("left")} className="big-arrow" />
-        <div ref={contentListRef} className="content-list">
-          <ContentItem />
-          <ContentItem />
-          <ContentItem />
-          <ContentItem />
-          <ContentItem />
-          <ContentItem />
-          <ContentItem />
-          <ContentItem />
-          <ContentItem />
-          <ContentItem />
-        </div>
-        <ArrowRight onClick={() => handleShift("right")} className="big-arrow big-arrow-right" />
+    <div className="content-container">
+      <h1>Continue Watching</h1>
+      <ArrowLeft onClick={() => handleShift("left")} className="big-arrow" />
+      <div ref={contentListRef} className="content-list">
+        <ContentItem />
+        <ContentItem />
+        <ContentItem />
+        <ContentItem />
+        <ContentItem />
+        <ContentItem />
+        <ContentItem />
+        <ContentItem />
+        <ContentItem />
+        <ContentItem />
       </div>
+      <ArrowRight onClick={() => handleShift("right")} className="big-arrow big-arrow-right" />
     </div>
   )
 }
