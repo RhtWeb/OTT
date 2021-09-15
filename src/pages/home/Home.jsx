@@ -1,6 +1,6 @@
-import ContentList from '../components/contentList/ContentList';
-import CoverPage from '../components/coverPage/CoverPage';
-import NavBar from '../components/navbar/NavBar';
+import ContentList from '../../components/contentList/ContentList';
+import CoverPage from '../../components/coverPage/CoverPage';
+import NavBar from '../../components/navbar/NavBar';
 import './home.scss';
 
 
