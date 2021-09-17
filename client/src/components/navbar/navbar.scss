@@ -1,0 +1,58 @@
+
+.navbar {
+
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+  transition: all 1s ease;
+
+  &-dark {
+    background-color: black;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      span {
+        margin: 0 1rem;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin: 0 1rem;
+      }
+
+      .dropdown {
+        cursor: pointer;
+
+        .option {
+          display: none;
+        }
+
+        &:hover {
+          .option {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            background-color: var(--main-color);
+
+            span {
+              padding: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
